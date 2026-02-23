@@ -2,7 +2,7 @@
 
 An interactive Streamlit dashboard analyzing NBA team and player performance for the 2024-25 season.
 
-**Live App:** [link]([https://your-app-url.streamlit.app](https://sunydatavizassignment5-9kh35tr8eg47qunrffgaup.streamlit.app/))  
+**Live App:** [link](https://sunydatavizassignment5-9kh35tr8eg47qunrffgaup.streamlit.app/)
 **GitHub:** [link](https://github.com/Krupsbhojani/SUNY_DATA_VIZ_Assignment_5)
 ---
 
