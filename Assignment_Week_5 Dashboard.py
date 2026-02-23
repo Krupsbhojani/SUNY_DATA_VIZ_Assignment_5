@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 st.set_page_config(page_title="NBA 2024-25 Dashboard", layout="wide")
-st.title("🏀 NBA 2024-25 Season Analytics")
+st.title("NBA 2024-25 Season Analytics")
 st.markdown("**Objective:** Analyze team and player performance trends across the 2024-25 NBA regular season to identify top performers and scoring patterns.")
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
@@ -73,7 +73,7 @@ m3.metric("Avg Wins", f"{df['Wins'].mean():.0f}")
 m4.metric("Top Scorer (Player)", "SGA – 32.7")
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["📊 Team Overview", "🏃 Player Stats", "📅 Monthly Trends"])
+tab1, tab2, tab3 = st.tabs(["Team Overview", "Player Stats", "Monthly Trends"])
 
 # ════════════════════════════════════════════════════════════════════
 # TAB 1 – Team Overview
@@ -103,7 +103,7 @@ with tab1:
         fig_scatter.update_traces(textposition="top center")
         fig_scatter.update_layout(height=400, margin=dict(l=0,r=0,t=40,b=0))
         st.plotly_chart(fig_scatter, use_container_width=True)
-        st.markdown("There's a clear positive trend — teams that score more tend to win more. OKC and Boston stand out as both high-scoring and high-winning.")
+        st.markdown("There's a clear positive trend : teams that score more tend to win more. OKC and Boston stand out as both high-scoring and high-winning.")
 
     # Heatmap – team stat categories
     st.subheader("Team Stats Heatmap")
@@ -153,7 +153,7 @@ with tab2:
                                   title="Rebounds vs Assists (size = PPG)")
         fig_pscatter.update_layout(height=420, margin=dict(l=0,r=0,t=40,b=0))
         st.plotly_chart(fig_pscatter, use_container_width=True)
-        st.markdown("Jokic sits in his own category — elite in both rebounding and assists while scoring 30+. Haliburton leads all players in assists, showing Indiana's pass-first system.")
+        st.markdown("Jokic sits in his own category : elite in both rebounding and assists while scoring 30+. Haliburton leads all players in assists, showing Indiana's pass-first system.")
 
     st.subheader("Raw Player Stats Table")
     st.dataframe(players.sort_values("PPG", ascending=False).reset_index(drop=True), use_container_width=True)
